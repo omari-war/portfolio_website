@@ -30,14 +30,7 @@ textarea:focus{
     outline: none;
 }
 
-@media screen and (max-width: 900px) {
 
-    /* Adjust breakpoint as needed */
-    #contact_info {
-        grid-template-columns: 1fr;
-        /* Single column for smaller screens */
-    }
-}
 
 form {
     display: flex;
@@ -88,6 +81,14 @@ button#submit-btn:hover {
     display: inline-block;
     border-width: 3px;
 }
+hr{
+    border: 2px solid #39363F;
+    border-radius: 5px;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
 @media (max-width: 900px) {
     input.field  {
         padding: 10px 12px;
@@ -101,6 +102,10 @@ button#submit-btn:hover {
     button#submit-btn {
         padding: 12px 15px;
         font-size: 1.2rem;
+    }
+    #contact_info {
+        grid-template-columns: 1fr;
+        gap: 5px;
     }
  
 }

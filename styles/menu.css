@@ -18,7 +18,6 @@
   font-weight: 300;
   color: #6634cb;
   display: block;
-  transition: 0.3s;
   text-align: center;
 }
 
@@ -32,9 +31,12 @@
   top: 0;
   font-size: 60px;
 }
+.sidepanel .closebtn:hover {
+  font-weight: 300;
+}
+
 
 body>header>nav h1{
-  /* align-items: right; */
   font-size: 35px;
 }
 body>header>nav h1 a{
@@ -51,7 +53,9 @@ body>header>nav h1 a{
   background-color: #6634cb;
   margin: 6px 0;
 }
-
+#nav_heading{
+  transition: filter 0.3s ease-in-out;
+}
 
 /* blur screen */
 .blur {
@@ -80,4 +84,8 @@ body > header > nav.scrolled {
   body>header>nav h1{
     font-size: 30px;
   }
+  
+  .sidepanel .closebtn {
+  padding-left: 11px;
+  padding-top: 0px;}
 }

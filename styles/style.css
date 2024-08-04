@@ -23,9 +23,8 @@ a{
 #particles_background {
   position: fixed;
   inset: 0;
-  z-index: -10;
+  z-index: -999;
 }
-C:\Users\Lonely\Documents\Web Dev\demo\cv\index.html
 #particles_background #canvas1 {
   background: #39363f;
 }

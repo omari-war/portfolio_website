@@ -23,3 +23,31 @@ window.addEventListener('scroll', function () {
         nav.classList.remove('scrolled');
     }
 });
+
+function showHeading() {
+    document.getElementById("nav_heading").style.display = 'block';
+}
+function hideHeading() {
+    document.getElementById("nav_heading").style.display = 'none';
+}
+const elementId = 'page_heading';
+        const elementToWatch = document.getElementById(elementId);
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    // Element is no longer in view
+                    console.log('Element out of view');
+                    // Your function here
+                    showHeading()
+                }
+                if (entry.isIntersecting) {
+                    // Element is no longer in view
+                    console.log('Element in view');
+                    // Your function here
+                    hideHeading();
+                }
+            });
+        });
+
+        observer.observe(elementToWatch);
