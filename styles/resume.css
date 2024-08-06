@@ -1,0 +1,126 @@
+#resume {
+    display: flex;
+    
+}
+
+#heading_name {
+    color: #4E5C4E;
+    font-family: "Arial Narrow", sans-serif;
+    font-style: normal;
+    font-weight: 700px;
+    text-decoration: none;
+    font-size: 4.5rem;
+    padding-top: 15pt;
+    padding-left: 3pt;
+    text-indent: 0pt;
+    text-align: center;
+    
+}
+
+#sub_heading {
+    padding-top: 4pt;
+    padding-left: 3pt;
+    text-indent: 0pt;
+    text-align: center;
+    font-family: "Gill Sans MT", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: 0pt;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td {
+    border: 2px solid black;
+    padding: 5px 10px;
+}
+
+.resume_content {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+.p,
+p {
+    color: black;
+    font-family: "Gill Sans MT", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+    margin: 0pt;
+}
+
+.s2 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+#resume a {
+    color: black;
+    font-family: "Gill Sans MT", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+.s3 {
+    color: black;
+    font-family: "Arial Narrow", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 15pt;
+}
+
+.s4 {
+    color: black;
+    font-family: "Gill Sans MT", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+li {
+    display: block;
+}
+
+#l1 {
+    padding-left: 0pt;
+}
+
+#l1>li>*:first-child:before {
+    content: "- ";
+    color: black;
+    font-family: "Gill Sans MT", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11pt;
+}
+@media (max-width: 900px) {
+    #heading_name {
+        font-size: 2.5rem;
+    }
+
+    .resume_content {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}

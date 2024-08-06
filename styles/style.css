@@ -4,7 +4,7 @@
 body {
   font-family: sans-serif;
   background-color: #39363f;
-  color: #f2ecfe;
+  color: #000000;
 }
 
 p {
@@ -157,8 +157,7 @@ a{
 }
 
 .section {
-  background: #F1ECFE;
-  color: rgba(0, 0, 0, .8);
+  background: rgb(241, 236, 254,0.9);
   padding-top: 24px;
   padding-bottom: 24px;
 }
