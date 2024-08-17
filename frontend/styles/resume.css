@@ -49,7 +49,9 @@ table td {
     gap: 10px;
 }
 
-
+.span{
+    display: none;
+}
 .p,
 p {
     color: black;
