@@ -1,12 +1,8 @@
 <?php
-// Basic connection settings
-$databaseHost = getenv('DATABASE_HOST');
-$databaseUsername = getenv('DATABASE_USERNAME');
-$databasePassword = getenv('DATABASE_PASSWORD');
-$databaseName = getenv('DATABASE_NAME');
 
-// Connect to the database
-$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
+$connectionInfo = array("UID" => getenv('DATABASE_USERNAME'), "pwd" => getenv('DATABASE_PASSWORD'), "Database" => "Portfolo-Website", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$serverName = "tcp:portfolio-website-sql.database.windows.net,1433";
+$conn = sqlsrv_connect($serverName, $connectionInfo); 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
