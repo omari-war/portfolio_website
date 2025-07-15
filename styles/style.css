@@ -26,7 +26,7 @@ a{
   z-index: -999;
 }
 #particles_background #canvas1 {
-  background: #39363f;
+  background: #150e22;
 }
 
 #particles_background img {
@@ -48,6 +48,12 @@ a{
   width: 30vw;
 }
 
+.splash .profile-picture:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(1.2);
+}
+
 .splash .image-wrapper {
   padding-top: 2%;
   margin-left: auto;
@@ -57,15 +63,28 @@ a{
 
 .splash h1 {
   font-size: 6em;
-  color: #af87ff;
+  color: #d8d8d8;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
 }
+.splash h1:hover {
+  color: white;
+  text-shadow: 0 0 10px #af87ff, 0 0 20px #af87ff, 0 0 30px #af87ff;
+  transition: color 0.3s ease-in-out;
+  filter: brightness(1.2);
+  
+}
+
 
 .splash h2 {
   font-size: 2.5em;
   font-weight: 100;
-  color: #dbc9ff;
+  color: #9d7be0;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -112,12 +131,12 @@ a{
 }
 
 .splash .social-icons a {
-  color: #6634cb;
+  color: #ffffff;
   font-size: 2em;
 }
 
 .splash .social-icons a:hover {
-  color: #2d0f69;
+  color: #be9dff;
 }
 
 .tooltip {
@@ -157,7 +176,7 @@ a{
 }
 
 .section {
-  background: rgb(241, 236, 254,0.9);
+  background: rgba(255, 255, 255, 0.9);
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -167,13 +186,25 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  backdrop-filter: blur(2px);
 }
 
 .section-title h1 {
   font-size:5rem;
-  color: #af87ff;
+  color: #e1e1e1;
   font-weight: 600;
   letter-spacing: .3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+}
+
+.section-title h1:hover {
+  color: white;
+  text-shadow: 0 0 10px #af87ff, 0 0 20px #af87ff, 0 0 30px #af87ff;
+  transition: color 0.3s ease-in-out;
+  filter: brightness(1.2);
+  
 }
 @media (max-width: 800px) {
   .section {
