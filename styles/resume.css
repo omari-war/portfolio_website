@@ -4,7 +4,7 @@
 }
 
 #heading_name {
-    color: #4E5C4E;
+    color: #000000;
     font-family: "Arial Narrow", sans-serif;
     font-style: normal;
     font-weight: 700px;
@@ -15,6 +15,27 @@
     text-indent: 0pt;
     text-align: center;
     
+}
+.download-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+}
+.download-button button {
+    background-color: #39363F;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.download-button button:hover {
+    background-color: #6b2fe2;
 }
 
 #sub_heading {
@@ -40,6 +61,7 @@ table {
 table td {
     border: 2px solid black;
     padding: 5px 10px;
+    width: auto;
 }
 
 .resume_content {

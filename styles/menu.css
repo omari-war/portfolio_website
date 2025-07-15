@@ -4,7 +4,8 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #f2ecfe;
+  background-color: rgba(16, 1, 24, 0.7);
+  backdrop-filter: blur(10px);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -15,13 +16,13 @@
   text-decoration: none;
   font-size: 25px;
   font-weight: 300;
-  color: #6634cb;
+  color: #ffffff;
   display: block;
   text-align: center;
 }
 
 .sidepanel a:hover {
-  color: #2d0f69;
+  color: #fefefe;
   font-weight: 600;
 }
 
@@ -34,12 +35,16 @@
   font-weight: 300;
 }
 
+body>header>nav{
+ z-index: 1000;
+}
 
 body>header>nav h1{
   font-size: 35px;
+  font-family: 'Outfit', sans-serif;
 }
 body>header>nav h1 a{
-  color: #6634cb;
+  color: #dfdfdf;
 }
 #men_dis{
   cursor: pointer;
@@ -49,8 +54,9 @@ body>header>nav h1 a{
   opacity: 100%;
   width: 35px;
   height: 5px;
-  background-color: #6634cb;
+  background-color: #ffffff;
   margin: 6px 0;
+  z-index: 100;
 }
 #nav_heading{
   transition: filter 0.3s ease-in-out;
@@ -70,9 +76,7 @@ body>header>nav{
   width: 100%;
   background-color: transparent;
 }
-body > header > nav.scrolled {
-  background-color: #39363f; /* Background color on scroll */
-}
+
 @media only screen and (max-width: 700px) {
   body>header>nav{
     padding: 12px 11px;
